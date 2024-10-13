@@ -1,0 +1,32 @@
+@mixin input-left {
+  
+  border-radius: 10px;
+  border: 1px solid #000000;
+  outline: none;
+  width: 100%;
+  padding-left: 8px;
+}
+
+@mixin task-title {
+
+  
+  gap: 0px;
+  opacity: 0px;
+}
+@mixin placeholder {
+  
+  height: 31.94px;
+
+  gap: 0px;
+  opacity: 0px;
+}
+@mixin tags{
+  background-color: #9be2db;
+  border-radius: 24px;
+
+  
+  height: 19.2px;
+  padding-left: 5px;
+
+  border-radius: 15px;
+}
