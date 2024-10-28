@@ -327,3 +327,75 @@ body {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "_mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .left-div {
+  width: 100%;
+  height: auto;
+  position: static;
+  background: #9be2df;
+  padding: 30px 10px;
+}
+
+.main .left-div .frame1 {
+  padding: 30px;
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.main .right-div {
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .main {
+    flex-direction: row;
+  }
+
+  .main .left-div {
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+  }
+
+  .main .right-div {
+    padding: 20px;
+    width: 100%;
+    margin-left: 30%;
+    height: 100vh;
+  }
+}
